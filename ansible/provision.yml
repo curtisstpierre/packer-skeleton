@@ -1,0 +1,16 @@
+---
+- hosts: all
+  tasks:
+    - name: Install essential packages
+      sudo: yes
+      apt:
+        update_cache: yes
+        name: "{{ item }}"
+      with_items:
+        - golang
+        - vim
+        - build-essential
+        - git
+        - unzip
+        - supervisor
+        - python-setuptools
