@@ -17,7 +17,7 @@
     {
       "type": "shell",
       "inline": [
-        "sudo apt-add-repository ppa:rquillo/ansible",
+        "sudo apt-add-repository ppa:ansible/ansible",
         "sudo /usr/bin/apt-get update",
         "sudo /usr/bin/apt-get -y install ansible"
       ]
